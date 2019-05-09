@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #212959;
+  background-color: #f6f8fc;
+  font-size: 14px;
+}
+
+input {
+  padding: 9px 12px;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px;
+  border-top: 0;
+  opacity: 0.25;
+}
+
+input,
+button {
+  font-size: inherit;
+  font: inherit;
+  min-width: 128px;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+label {
+  text-transform: uppercase;
+  color: rgb(139, 142, 165);
+  font-size: 12px;
+}
+
+.submit-btn {
+  background: rgb(219, 66, 84);
+  padding: 15px 30px;
+  color: white;
+  border: 0;
+}
