@@ -2,7 +2,7 @@
   "name": "swapto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://trusttokenmark.github.io/swapto",
+  "homepage": "https://swapto.trusttoken.com",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
