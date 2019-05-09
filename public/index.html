@@ -19,11 +19,31 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Swap Tether for TrueUSD</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
     <div id="root"></div>
+
+    <!--[if lte IE 8]>
+      <script
+        charset="utf-8"
+        type="text/javascript"
+        src="//js.hsforms.net/forms/v2-legacy.js"
+      ></script>
+    <![endif]-->
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/v2.js"
+    ></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "4307692",
+        formId: "9bbc14ad-8794-4394-93ff-cd1f771ad0e5"
+      });
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
