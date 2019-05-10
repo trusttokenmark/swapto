@@ -108,4 +108,7 @@ hr {
   .divider {
     flex-direction: row;
   }
+  .funnel {
+    padding: 0 0 0 4em;
+  }
 }
