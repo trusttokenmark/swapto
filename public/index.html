@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -28,26 +32,49 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <div id="root"></div>
-
-    <!--[if lte IE 8]>
-      <script
-        charset="utf-8"
-        type="text/javascript"
-        src="//js.hsforms.net/forms/v2-legacy.js"
-      ></script>
-    <![endif]-->
-    <script
-      charset="utf-8"
-      type="text/javascript"
-      src="//js.hsforms.net/forms/v2.js"
-    ></script>
-    <script>
-      hbspt.forms.create({
-        portalId: "4307692",
-        formId: "9bbc14ad-8794-4394-93ff-cd1f771ad0e5"
-      });
-    </script>
+    <div class="sans-serif center" style="max-width: 1420px">
+      <img
+        src="https://static-truecoin.trusttoken.com/trusttoken-logo.2689f451.svg"
+        class="logo"
+      />
+      <div class="flex divider">
+        <div
+          id="left-root"
+          class="flex flex-auto justify-center align-center"
+        ></div>
+        <div class="flex flex-auto justify-center center">
+          <div class="measure flex flex-column justify-center ma3 ma5-ns">
+            <h1 class="f3 mv4">
+              Pledge to swap your Tether for TrueUSD on Tron
+              <br />
+              <small class="o-50">
+                No fees, 1:1 swap for the first $50 million
+              </small>
+            </h1>
+            <!--[if lte IE 8]>
+              <script
+                charset="utf-8"
+                type="text/javascript"
+                src="//js.hsforms.net/forms/v2-legacy.js"
+              ></script>
+            <![endif]-->
+            <script
+              charset="utf-8"
+              type="text/javascript"
+              src="//js.hsforms.net/forms/v2.js"
+            ></script>
+            <script>
+              hbspt.forms.create({
+                portalId: "4307692",
+                formId: "9bbc14ad-8794-4394-93ff-cd1f771ad0e5"
+              });
+            </script>
+            <hr />
+            Hello
+          </div>
+        </div>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

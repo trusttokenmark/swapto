@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import funnel from "./funnel.svg";
 
 import "./styles.css";
+import "./hubspot.css";
 
 function PledgeForm({ onSubmit }) {
   return (
@@ -61,66 +62,8 @@ function Thanks() {
 }
 
 function Left() {
-  return (
-    <div
-      className="flex flex-auto justify-center align-center w-30"
-      style={{ minHeight: "100vmin", minWidth: 350 }}
-    >
-      <img src={funnel} />
-    </div>
-  );
+  return <img src={funnel} className="funnel" />;
 }
 
-function Right() {
-  const [submitted, setSubmitted] = React.useState(false);
-
-  return (
-    <div
-      className="flex flex-auto justify-center center pa4"
-      style={{
-        minHeight: "100vh"
-      }}
-    >
-      <div className="measure flex flex-column justify-center">
-        <h1 className="f3 mv4">
-          Pledge to swap your Tether for TrueUSD on Tron
-          <br />
-          <small className="o-50">
-            No fees, 1:1 swap for the first $50 million
-          </small>
-        </h1>
-        {!submitted && <PledgeForm onSubmit={() => setSubmitted(true)} />}
-        {submitted && (
-          <>
-            <hr className="mv4" />
-            <Thanks />
-          </>
-        )}
-      </div>
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <div
-      className="sans-serif center"
-      style={{
-        maxWidth: 1420
-      }}
-    >
-      <img
-        src="https://static-truecoin.trusttoken.com/trusttoken-logo.2689f451.svg"
-        className="absolute ma4"
-        style={{ width: 160 }}
-      />
-      <div className="flex flex-wrap">
-        <Left />
-        <Right />
-      </div>
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const rootElement = document.getElementById("left-root");
+ReactDOM.render(<Left />, rootElement);

@@ -2,9 +2,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light-blue: #f6f8fc;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h1 small {
+  font-weight: normal;
+  font-size: 70%;
+}
+
 body {
   color: #212959;
-  background-color: #f6f8fc;
+  background-color: var(--light-blue);
   font-size: 14px;
 }
 
@@ -36,9 +49,63 @@ label {
   font-size: 12px;
 }
 
-.submit-btn {
-  background: rgb(219, 66, 84);
-  padding: 15px 30px;
-  color: white;
-  border: 0;
+input {
+  color: inherit;
+}
+
+input::placeholder {
+  color: inherit;
+  opacity: 0.3;
+}
+
+hr {
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: inherit;
+  border-bottom: 0;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  margin: 16px;
+  width: 100px;
+  box-shadow: 0 0 30px 30px var(--light-blue);
+  background: var(--light-blue);
+}
+
+.funnel {
+  transform: scale(1.1);
+  padding: 0 4em;
+}
+
+#left-root {
+  height: 70vh;
+}
+
+.divider {
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 400px) {
+  .logo {
+    margin: 30px;
+    width: 130px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .logo {
+    margin: 30px;
+    width: 160px;
+  }
+  #left-root {
+    height: 100vh;
+  }
+  .divider {
+    flex-direction: row;
+  }
 }

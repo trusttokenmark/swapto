@@ -1,0 +1,35 @@
+:root {
+  --red: rgb(219, 66, 84);
+}
+
+.hs-form-field {
+  margin-bottom: 24px;
+}
+
+.hs-input {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.actions {
+  text-align: right;
+}
+
+.hs-button.primary.large {
+  background: var(--red);
+  padding: 15px 30px;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+}
+
+ul.no-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hs-error-msgs label,
+.hs-error-msg {
+  color: var(--red);
+}
